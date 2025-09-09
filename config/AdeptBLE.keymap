@@ -55,6 +55,9 @@
         &mkp MB1 &ltm DEVICE MB5 &mkp MCLK &lth SCRLM RCLK
         &mkp LCLK                               &mto SCRLM SNIPE
       >;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+
     };
     scroll_tap_layer {
       display-name = "Scroll-Momentary";
