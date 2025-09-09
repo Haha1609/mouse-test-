@@ -23,7 +23,7 @@
         compatible = "zmk,kscan-gpio-direct";
         wakeup-source;
         input-gpios
-            = <&gpio0  1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
+            = <&gpio0  10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
             , <&gpio0  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -58,6 +58,14 @@
             , <&key_physical_attrs  75 100  125  100       0     0     0>
             ;
     };
+
+	encoder_left: encoder_left {
+        compatible = "alps,ec11";
+      		a-gpios = <&gpio1 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+	   	    b-gpios = <&gpio0 9 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+		steps = <24>;
+      		status = "okay";
+	};
 
     position_map {
         compatible = "zmk,physical-layout-position-map";
