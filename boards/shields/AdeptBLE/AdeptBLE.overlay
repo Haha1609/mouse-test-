@@ -97,6 +97,18 @@
     };
 };
 
+&gpiote {
+    status = "okay";
+};
+
+&gpio0 {
+    status = "okay";
+};
+
+&gpio1 {
+    status = "okay";
+};
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
