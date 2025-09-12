@@ -52,8 +52,8 @@
     default_layer {
       display-name = "Default";
       bindings = <
-        &mkp MB1 &ltm DEVICE MB5 &mkp MCLK &lth SCRLM RCLK
-        &mkp LCLK                               &mto SCRLM SNIPE
+        &mkp MB1 &mkp MB5 &mkp MCLK &mkp MB2
+        &kp A                               &kp B
       >;
             sensor-bindings =
                 <&inc_dec_kp C_VOL_UP C_VOL_DN>;
